@@ -22,7 +22,7 @@ public class Safe {
     public ArrayList<String> getList(String givenPin) {
         if(givenPin.equals(pinCode)) {
             return safeFolder;
-        } else {System.out.println("Väärä PIN-koodi!"); return null;}
+        } else {return null;}
     }
 }
 

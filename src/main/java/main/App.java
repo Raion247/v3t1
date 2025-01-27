@@ -37,7 +37,9 @@ public class App
                     case 3:
                         System.out.println("Anna PIN-koodi:");
                         String givenPin = sc.nextLine();
-                        System.out.println(safe.getList(givenPin));
+                        if(safe.getList(givenPin) == null) {
+                            System.out.println("Väärä PIN-koodi!");
+                        } else {System.out.println(safe.getList(givenPin));}
                         break;
                     case 0:
                         System.out.println("Kiitos ohjelman käytöstä.");
